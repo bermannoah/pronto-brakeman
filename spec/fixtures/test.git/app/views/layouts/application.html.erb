@@ -5,11 +5,13 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= link_to "example.org", target: "_blank" %>
-</head>
-<body>
+  </head>
+  <body>
 
-<%= yield %>
+  <%= link_to some_url, target: "_blank" do %>
+    Uh oh
+  <% end %>
+  <%= yield %>
 
 </body>
 </html>

@@ -45,7 +45,7 @@ module Pronto
       context 'with run all checks disabled' do
         let(:config_hash) { { 'brakeman' => { 'run_all_checks' => false } } }
         include_context 'test repo'
-        let(:patches) { repo.show_commit('7835d50') }
+        let(:patches) { repo.diff('f5633641621e7a54b721638e7159a1ce60d47285') }
 
         it 'should disable all checks' do
           expect(brakeman.run_all_checks?).to eq false
@@ -57,11 +57,12 @@ module Pronto
       context 'with run all checks enabled' do
         let(:config_hash) { { 'brakeman' => { 'run_all_checks' => true } } }
         include_context 'test repo'
-        let(:patches) { repo.show_commit('7835d50') }
+        let(:patches) { repo.diff('f5633641621e7a54b721638e7159a1ce60d47285') }
 
         it 'should enable all checks' do
           expect(brakeman.run_all_checks?).to eq true
         end
+        its(:count) { should == 1 }
         its(:'last') do
           should ==
             'Possible security ewqfweqfewdasds: [/)'

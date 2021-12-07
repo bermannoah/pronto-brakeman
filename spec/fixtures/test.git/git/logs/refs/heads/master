@@ -2,3 +2,5 @@
 da701274f54ae0fde7878e9834e5fb2e1148d48b 225af1ab522457873a5994c150d7ad571ff260c0 Mindaugas Mozūras <mindaugas.mozuras@gmail.com> 1429988422 +0300	commit: Add unsafe redirect_to with params
 225af1ab522457873a5994c150d7ad571ff260c0 c29a5cec31aea988a1884aa87b2dcb92da84c68b Noah Berman <noah-berman@cookpad.com> 1638876408 +0000	commit: Add link vulnerable to reeverse tabnabbing
 c29a5cec31aea988a1884aa87b2dcb92da84c68b 7835d50de98efc04d757faeb74892438c592f30c Noah Berman <noah-berman@cookpad.com> 1638876485 +0000	commit (amend): Add link vulnerable to reverse tabnabbing
+7835d50de98efc04d757faeb74892438c592f30c 6df390a379ae6e68e064c34dd8485525db637fb8 Noah Berman <noah-berman@cookpad.com> 1638885736 +0000	commit: Add link vulnerable to reeverse tabnabbing
+6df390a379ae6e68e064c34dd8485525db637fb8 f5633641621e7a54b721638e7159a1ce60d47285 Noah Berman <noah-berman@cookpad.com> 1638885756 +0000	rebase (finish): refs/heads/master onto da701274f54ae0fde7878e9834e5fb2e1148d48b
